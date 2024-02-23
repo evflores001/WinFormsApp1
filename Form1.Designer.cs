@@ -28,49 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCreateFolder = new Button();
+            btnFindFile = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
-            // btnCreateFolder
+            // btnFindFile
             // 
-            btnCreateFolder.Location = new Point(32, 70);
-            btnCreateFolder.Margin = new Padding(2, 2, 2, 2);
-            btnCreateFolder.Name = "btnCreateFolder";
-            btnCreateFolder.Size = new Size(116, 24);
-            btnCreateFolder.TabIndex = 0;
-            btnCreateFolder.Text = "Create Folder";
-            btnCreateFolder.UseVisualStyleBackColor = true;
-            btnCreateFolder.Click += btnCreateFolder_Click;
+            btnFindFile.Location = new Point(32, 70);
+            btnFindFile.Margin = new Padding(2);
+            btnFindFile.Name = "btnFindFile";
+            btnFindFile.Size = new Size(116, 24);
+            btnFindFile.TabIndex = 0;
+            btnFindFile.Text = "Find File";
+            btnFindFile.UseVisualStyleBackColor = true;
+            btnFindFile.Click += btnFindFile_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(151, 71);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
+            textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(355, 23);
+            textBox1.Size = new Size(682, 23);
             textBox1.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(276, 55);
+            label1.Location = new Point(151, 54);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(115, 15);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Enter file name here:";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(153, 104);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(680, 94);
+            listBox1.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(692, 567);
+            ClientSize = new Size(995, 567);
+            Controls.Add(listBox1);
             Controls.Add(label1);
             Controls.Add(textBox1);
-            Controls.Add(btnCreateFolder);
-            Margin = new Padding(2, 2, 2, 2);
+            Controls.Add(btnFindFile);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -79,9 +90,9 @@
 
         #endregion
 
-        private Button btnCreateFolder;
+        private Button btnFindFile;
         private TextBox textBox1;
         private Label label1;
-
+        private ListBox listBox1;
     }
 }
